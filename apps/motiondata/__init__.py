@@ -1,1 +1,0 @@
-default_app_config = "motiondata.apps.MotiondataConfig"
