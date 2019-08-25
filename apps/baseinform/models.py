@@ -58,72 +58,88 @@ class Action(models.Model):
         return self.name
 
 
-class Arrange(models.Model):
-    id = models.AutoField( verbose_name=u"动作ID",primary_key=True)
-    # name = models.CharField(max_length=20, verbose_name=u"动作名称")
-    athlete = models.ForeignKey(Athlete,verbose_name=u"运动员")
-    timepoint = models.CharField(max_length=20, verbose_name=u"时间点")
-    place = models.CharField(max_length=20, verbose_name=u"地点")
-    coach = models.ForeignKey(Coach,verbose_name=u"教练员")
-    content = models.CharField(max_length=200, verbose_name=u"训练内容")
+class Joint(models.Model):
+    jointid = models.IntegerField(verbose_name=u"关节ID",primary_key=True)
+    name = models.CharField(max_length=20, verbose_name=u"关节名称")
+    memo = models.CharField(max_length=20, verbose_name=u"备忘录")
 
     class Meta:
-        verbose_name = u"训练计划安排"
+        verbose_name = u"人体主要关节"
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return self.content
+        return self.name
 
 
-class Force_info(models.Model):
-    id = models.AutoField(verbose_name=u"ID",primary_key=True)
-    athlete = models.ForeignKey(Athlete, verbose_name=u"运动员")
-    action = models.ForeignKey(Action, verbose_name=u"击球动作")
-    testid = models.IntegerField(verbose_name=u"测试序号")
-    testdate = models.DateTimeField(verbose_name=u"测试日期",null=True,blank=True)
-    ax = models.FloatField(verbose_name=u'线加速度x')
-    ay = models.FloatField(verbose_name=u'线加速度y')
-    az = models.FloatField(verbose_name=u'线加速度z')
-    anglex = models.FloatField(verbose_name=u'角加速度x')
-    angley = models.FloatField(verbose_name=u'角加速度y')
-    anglez = models.FloatField(verbose_name=u'角加速度z')
-    avx = models.FloatField(verbose_name=u'线速度x')
-    avy = models.FloatField(verbose_name=u'线速度y')
-    avz = models.FloatField(verbose_name=u'线速度z')
-    magnetismx = models.FloatField(verbose_name=u'地磁x')
-    magnetismy = models.FloatField(verbose_name=u'地磁y')
-    magnetismz = models.FloatField(verbose_name=u'地磁z')
-    temperature= models.FloatField(verbose_name=u'温度')
-    mark =  models.IntegerField(verbose_name=u'标识')
 
-    class Meta:
-        verbose_name = u"击球力量原始数据"
-        verbose_name_plural = verbose_name
+# class Arrange(models.Model):
+#     id = models.AutoField( verbose_name=u"动作ID",primary_key=True)
+#     # name = models.CharField(max_length=20, verbose_name=u"动作名称")
+#     athlete = models.ForeignKey(Athlete,verbose_name=u"运动员")
+#     timepoint = models.CharField(max_length=20, verbose_name=u"时间点")
+#     place = models.CharField(max_length=20, verbose_name=u"地点")
+#     coach = models.ForeignKey(Coach,verbose_name=u"教练员")
+#     content = models.CharField(max_length=200, verbose_name=u"训练内容")
+#
+#     class Meta:
+#         verbose_name = u"训练计划安排"
+#         verbose_name_plural = verbose_name
+#
+#     def __str__(self):
+#         return self.content
+#
+#
+# class Force_info(models.Model):
+#     id = models.AutoField(verbose_name=u"ID",primary_key=True)
+#     athlete = models.ForeignKey(Athlete, verbose_name=u"运动员")
+#     action = models.ForeignKey(Action, verbose_name=u"击球动作")
+#     testid = models.IntegerField(verbose_name=u"测试序号")
+#     testdate = models.DateTimeField(verbose_name=u"测试日期",null=True,blank=True)
+#     ax = models.FloatField(verbose_name=u'线加速度x')
+#     ay = models.FloatField(verbose_name=u'线加速度y')
+#     az = models.FloatField(verbose_name=u'线加速度z')
+#     anglex = models.FloatField(verbose_name=u'角加速度x')
+#     angley = models.FloatField(verbose_name=u'角加速度y')
+#     anglez = models.FloatField(verbose_name=u'角加速度z')
+#     avx = models.FloatField(verbose_name=u'线速度x')
+#     avy = models.FloatField(verbose_name=u'线速度y')
+#     avz = models.FloatField(verbose_name=u'线速度z')
+#     magnetismx = models.FloatField(verbose_name=u'地磁x')
+#     magnetismy = models.FloatField(verbose_name=u'地磁y')
+#     magnetismz = models.FloatField(verbose_name=u'地磁z')
+#     temperature= models.FloatField(verbose_name=u'温度')
+#     mark =  models.IntegerField(verbose_name=u'标识')
+#
+#     class Meta:
+#         verbose_name = u"击球力量原始数据"
+#         verbose_name_plural = verbose_name
+#
+#     def __int__(self):
+#         return self.id
+#
+#
+# class Analysis(models.Model):
+#     id = models.AutoField(verbose_name=u"ID",primary_key=True)
+#     athlete = models.ForeignKey(Athlete, verbose_name=u"运动员")
+#     action = models.ForeignKey(Action, verbose_name=u"击球动作")
+#     testid = models.IntegerField(verbose_name=u"测试序号")
+#     testdate = models.DateTimeField(verbose_name=u"测试日期",null=True,blank=True)
+#     speedx = models.FloatField(verbose_name=u'线速度x')
+#     speedy = models.FloatField(verbose_name=u'线速度y')
+#     speedz = models.FloatField(verbose_name=u'线速度z')
+#     displacementx = models.FloatField(verbose_name=u'位移x')
+#     displacementy = models.FloatField(verbose_name=u'位移y')
+#     displacementz = models.FloatField(verbose_name=u'位移z')
+#     sportworkx = models.FloatField(verbose_name=u'功x')
+#     sportworky = models.FloatField(verbose_name=u'功y')
+#     sportworkz = models.FloatField(verbose_name=u'功z')
+#     mark =  models.IntegerField(verbose_name=u'标识')
+#
+#     class Meta:
+#         verbose_name = u"击球力量数据分析"
+#         verbose_name_plural = verbose_name
+#
+#     def __int__(self):
+#         return self.id
 
-    def __int__(self):
-        return self.id
 
-
-class Analysis(models.Model):
-    id = models.AutoField(verbose_name=u"ID",primary_key=True)
-    athlete = models.ForeignKey(Athlete, verbose_name=u"运动员")
-    action = models.ForeignKey(Action, verbose_name=u"击球动作")
-    testid = models.IntegerField(verbose_name=u"测试序号")
-    testdate = models.DateTimeField(verbose_name=u"测试日期",null=True,blank=True)
-    speedx = models.FloatField(verbose_name=u'线速度x')
-    speedy = models.FloatField(verbose_name=u'线速度y')
-    speedz = models.FloatField(verbose_name=u'线速度z')
-    displacementx = models.FloatField(verbose_name=u'位移x')
-    displacementy = models.FloatField(verbose_name=u'位移y')
-    displacementz = models.FloatField(verbose_name=u'位移z')
-    sportworkx = models.FloatField(verbose_name=u'功x')
-    sportworky = models.FloatField(verbose_name=u'功y')
-    sportworkz = models.FloatField(verbose_name=u'功z')
-    mark =  models.IntegerField(verbose_name=u'标识')
-
-    class Meta:
-        verbose_name = u"击球力量数据分析"
-        verbose_name_plural = verbose_name
-
-    def __int__(self):
-        return self.id

@@ -5,5 +5,5 @@ from django.apps import AppConfig
 
 class MotiondataConfig(AppConfig):
     name = 'apps.motiondata'
-    verbose_name = u"动作捕捉数据"
-    orderIndex = 3
+    verbose_name = u"动作捕捉"
+    orderIndex = 4

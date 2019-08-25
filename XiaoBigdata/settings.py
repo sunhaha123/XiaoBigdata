@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'motiondata',
     'strike',
     'users',
+    'trainingplan',
+    'strike2',
+    'association',
 
 ]
 

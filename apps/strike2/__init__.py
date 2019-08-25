@@ -1,0 +1,1 @@
+default_app_config = "strike2.apps.Strike2Config"

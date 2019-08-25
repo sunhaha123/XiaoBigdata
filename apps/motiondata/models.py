@@ -3,17 +3,7 @@ from  datetime import datetime
 from django.db import models
 from apps.baseinform.models import  Athlete, Action
 
-class Joint(models.Model):
-    jointid = models.IntegerField(verbose_name=u"关节ID",primary_key=True)
-    name = models.CharField(max_length=20, verbose_name=u"关节名称")
-    memo = models.CharField(max_length=20, verbose_name=u"备忘录")
 
-    class Meta:
-        verbose_name = u"人体主要关节"
-        verbose_name_plural = verbose_name
-
-    def __str__(self):
-        return self.name
 
 
 class Mtion_data(models.Model):

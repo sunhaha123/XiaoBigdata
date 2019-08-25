@@ -13,7 +13,7 @@ class BaseSetting(object):
     use_bootswatch = True
 
 class GloabalSettings(object):
-    site_title = "乒乓球大数据分析系统"
+    site_title = "乒乓球训练监控大数据分析平台"
     site_footer = "中国乒乓球学院"
     menu_style = "accordion"
 
