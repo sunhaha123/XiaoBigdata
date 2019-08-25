@@ -5,7 +5,7 @@ Created on Wed Oct 11 15:12:47 2017
 @author: Administrator
 """
 import  xadmin
-from .models import Mtion_data,Force_order
+from .models import Mtion_data,Force_order,Curve_model
 
 
 
@@ -25,8 +25,14 @@ class Force_orderAdmin(object):
     search_fields = ['id', 'athlete','action','testid','testdate','Hip','LeftShoulder','LeftArm','RightShoulder','RightArm','LeftLeg','LeftFoot','RightLeg','RightFoot']
     list_filter = ['id', 'athlete','action','testid','testdate','Hip','LeftShoulder','LeftArm','RightShoulder','RightArm','LeftLeg','LeftFoot','RightLeg','RightFoot']
 
+class Curve_modelAdmin(object):
+    list_display = ['id', 'action','frameno','hip_pos_x','hip_pos_y','hip_pos_z','hip_rot_x','hip_rot_y','hip_rot_z']
+    search_fields = ['id', 'action','frameno','hip_pos_x','hip_pos_y','hip_pos_z','hip_rot_x','hip_rot_y','hip_rot_z']
+    list_filter =  ['id', 'action','frameno','hip_pos_x','hip_pos_y','hip_pos_z','hip_rot_x','hip_rot_y','hip_rot_z']
+
+
 
 
 xadmin.site.register(Mtion_data,Mtion_dataAdmin)
-xadmin.site.register(Force_order, Force_orderAdmin)
-
+xadmin.site.register(Force_order,Force_orderAdmin)
+xadmin.site.register(Curve_model,Curve_modelAdmin)

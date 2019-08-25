@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'users',
     'trainingplan',
     'strike2',
-    'association',
+    # 'association',
+    'analysis',
 
 ]
 

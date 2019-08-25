@@ -5,17 +5,17 @@ Created on Wed Oct 11 15:12:47 2017
 @author: Administrator
 """
 import  xadmin
-from .models import Force_info,Analysis
+from .models import Force_info
 
 class Force_infoAdmin(object):
     list_display = ['id', 'athlete','action','testid','testdate','ax','ay','az','anglex','angley','anglez']
     search_fields = ['id', 'athlete','action','testid','testdate','ax','ay','az','anglex','angley','anglez']
     list_filter = ['id', 'athlete','action','testid','testdate','ax','ay','az','anglex','angley','anglez']
 
-class AnalysisAdmin(object):
-    list_display = ['id', 'athlete','action','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
-    search_fields = ['id', 'athlete','action','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
-    list_filter = ['id', 'athlete','action','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
+# class AnalysisAdmin(object):
+#     list_display = ['id', 'athlete','action','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
+#     search_fields = ['id', 'athlete','action','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
+#     list_filter = ['id', 'athlete','action','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
 
 
 # class Striking_effectAdmin(object):
@@ -33,5 +33,5 @@ class AnalysisAdmin(object):
 
 
 xadmin.site.register(Force_info,Force_infoAdmin)
-xadmin.site.register(Analysis,AnalysisAdmin)
+# xadmin.site.register(Analysis,AnalysisAdmin)
 
