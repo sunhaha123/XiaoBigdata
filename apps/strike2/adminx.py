@@ -18,7 +18,7 @@ from .models import Striking_effect
 
 class Striking_effectAdmin(object):
     list_display = ['id', 'athlete','action','testid','testdate','spin','speed','point']
-    search_fields = ['id', 'athlete','action','testid','testdate','spin','speed','point']
+    search_fields = ['id', 'athlete__name','action__name','testid','testdate','spin','speed','point']
     list_filter = ['id', 'athlete','action','testid','testdate','spin','speed','point']
 
 #

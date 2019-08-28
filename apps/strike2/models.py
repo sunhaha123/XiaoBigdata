@@ -11,7 +11,7 @@ class Striking_effect(models.Model):
     testdate = models.DateTimeField(verbose_name=u"测试日期", null=True, blank=True)
     spin = models.FloatField(verbose_name=u'转速')
     speed = models.FloatField(verbose_name=u'球速')
-    point = models.IntegerField(verbose_name=u'落点',choices=((-1,"出界"),(0,"下网"),(1,"上台"),(2,"大区"),(3,"小区")))
+    point = models.IntegerField(verbose_name=u'落点',choices=((0,"出界"),(1,"上台"),(2,"大区"),(3,"小区")))
 
     class Meta:
         verbose_name = u"击球质量数据"

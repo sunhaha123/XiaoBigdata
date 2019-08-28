@@ -25,7 +25,7 @@ from .models import Curve_fit
 
 class Curve_fitAdmin(object):
     list_display = ['id', 'athlete','action','testid','testdate','joint','pos_x','pos_y','pos_z','rot_x','rot_y','rot_z']
-    search_fields =  ['id', 'athlete','action','testid','testdate','joint','pos_x','pos_y','pos_z','rot_x','rot_y','rot_z']
+    search_fields =  ['id', 'athlete__name','action__name','testid','testdate','joint','pos_x','pos_y','pos_z','rot_x','rot_y','rot_z']
     list_filter =  ['id', 'athlete','action','testid','testdate','joint','pos_x','pos_y','pos_z','rot_x','rot_y','rot_z']
 
 

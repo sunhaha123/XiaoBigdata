@@ -9,7 +9,7 @@ from .models import Coach,Athlete,Action,Joint
 
 class AthleteAdmin(object):
     list_display = [ 'athleteid','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
-    search_fields = [  'athleteid','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
+    search_fields = [  'athleteid','name', 'sfzh','csrq','gender','height','weight','years','grade','coach__name']
     list_filter = [  'athleteid','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
 
 

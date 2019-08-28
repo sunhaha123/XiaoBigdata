@@ -9,7 +9,7 @@ from .models import Force_info
 
 class Force_infoAdmin(object):
     list_display = ['id', 'athlete','action','testid','testdate','ax','ay','az','anglex','angley','anglez']
-    search_fields = ['id', 'athlete','action','testid','testdate','ax','ay','az','anglex','angley','anglez']
+    search_fields = ['id', 'athlete__name','action__name','testid','testdate','ax','ay','az','anglex','angley','anglez']
     list_filter = ['id', 'athlete','action','testid','testdate','ax','ay','az','anglex','angley','anglez']
 
 # class AnalysisAdmin(object):

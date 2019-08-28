@@ -10,6 +10,7 @@ class Coach(models.Model):
     address = models.CharField(max_length=200, verbose_name=u"居住地",null=True,blank=True)
     grade = models.CharField(max_length=200, verbose_name=u"教练员等级",null=True,blank=True)
     years = models.IntegerField(verbose_name=u"执教年数")
+    team_name = models.CharField(max_length=50, verbose_name=u"所在运动队名称",null=True,blank=True)
 
     class Meta:
         verbose_name = u"教练员"

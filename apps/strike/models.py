@@ -12,6 +12,8 @@ class Force_info(models.Model):
     ax = models.FloatField(verbose_name=u'线加速度x')
     ay = models.FloatField(verbose_name=u'线加速度y')
     az = models.FloatField(verbose_name=u'线加速度z')
+    a  = models.FloatField(verbose_name=u'三个方向的合加速度')
+    f  = models.FloatField(verbose_name=u'合力')
     anglex = models.FloatField(verbose_name=u'角加速度x')
     angley = models.FloatField(verbose_name=u'角加速度y')
     anglez = models.FloatField(verbose_name=u'角加速度z')
