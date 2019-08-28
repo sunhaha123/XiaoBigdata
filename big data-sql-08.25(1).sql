@@ -400,7 +400,7 @@ CREATE TABLE performance(
   athlete_id int(11) NOT NULL,
   rival      varchar(50) DEFAULT NULL, /*对手名称*/
   date date DEFAULT NULL,
-  mingcheng varchar(50) DEFAULT NULL,
+  mingcheng varchar(50) DEFAULT NULL	,
   xiangmu int(11) NOT NULL,  /*1：单打，2：双打*/
   result    varchar(10) NOT NULL,      /*比赛结果：总比分*/
   r1        varchar(10) NOT NULL,      /*第1局比分*/
