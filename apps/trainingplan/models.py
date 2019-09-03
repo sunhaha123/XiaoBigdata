@@ -40,7 +40,7 @@ class Hrate_info(models.Model):
         return self.id
 
 
-class ShenghuaDate(models.Model):
+class Physiology_test(models.Model):
     id = models.AutoField(verbose_name=u"ID",primary_key=True)
     athlete = models.ForeignKey(Athlete, verbose_name=u'运动员姓名')
     date = models.DateField(null=True, blank=True, verbose_name=u'检验日期')

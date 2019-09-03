@@ -8,28 +8,28 @@ import  xadmin
 from .models import Coach,Athlete,Action,Joint
 
 class AthleteAdmin(object):
-    list_display = [ 'athleteid','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
-    search_fields = [  'athleteid','name', 'sfzh','csrq','gender','height','weight','years','grade','coach__name']
-    list_filter = [  'athleteid','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
+    list_display = [ 'athlete_id','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
+    search_fields = [  'athlete_id','name', 'sfzh','csrq','gender','height','weight','years','grade','coach__name']
+    list_filter = [  'athlete_id','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
 
 
 class CoachAdmin(object):
-    list_display = [ 'coachid','name', 'gender', 'grade','years']
-    search_fields = [ 'coachid','name', 'gender', 'grade','years']
-    list_filter = [ 'coachid','name', 'gender', 'grade','years']
+    list_display = [ 'coach_id','name', 'gender', 'grade','years']
+    search_fields = [ 'coach_id','name', 'gender', 'grade','years']
+    list_filter = [ 'coach_id','name', 'gender', 'grade','years']
 
 
 class ActionAdmin(object):
-    list_display = ['actionid', 'name', 'memo', ]
-    search_fields = ['actionid', 'name', 'memo',]
-    list_filter = ['actionid', 'name', 'memo',]
+    list_display = ['action_id', 'name', 'memo', ]
+    search_fields = ['action_id', 'name', 'memo',]
+    list_filter = ['action_id', 'name', 'memo',]
 
 
 
 class JointAdmin(object):
-    list_display = ['jointid', 'name', 'memo', ]
-    search_fields = ['jointid', 'name', 'memo',]
-    list_filter = ['jointid', 'name', 'memo',]
+    list_display = ['joint_id', 'name', 'memo', ]
+    search_fields = ['joint_id', 'name', 'memo',]
+    list_filter = ['joint_id', 'name', 'memo',]
 
 # class ArrangeAdmin(object):
 #     list_display = ['id', 'athlete','timepoint','place','coach','content']
