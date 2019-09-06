@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0331b7b-a1b4-4cef-86ad-3b09490cc7de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/baseinform/migrations/0009_coach_team_name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/baseinform/migrations/0010_auto_20190901_1605.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/baseinform/migrations/0011_auto_20190901_1716.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/baseinform/migrations/0012_auto_20190902_2353.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/motiondata/migrations/0004_auto_20190901_1448.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/motiondata/migrations/0005_auto_20190901_1605.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/motiondata/migrations/0006_auto_20190901_1633.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/motiondata/migrations/0007_auto_20190901_1636.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/motiondata/migrations/0008_motion_data_leftleg_rot_x.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/strike/migrations/0004_auto_20190901_1448.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/strike/migrations/0005_auto_20190901_1605.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/strike2/migrations/0003_auto_20190901_1448.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trainingplan/migrations/0003_auto_20190901_1605.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/baseinform/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/baseinform/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/baseinform/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/baseinform/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/motiondata/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/motiondata/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/motiondata/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/motiondata/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/trainingplan/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trainingplan/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/trainingplan/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trainingplan/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/strike/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/strike/adminx.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,33 +15,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/strike/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/strike/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/motiondata/models.py">
+        <entry file="file://$PROJECT_DIR$/apps/strike/adminx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="11" />
+            <state relative-caret-position="322">
+              <caret line="15" column="126" selection-start-line="15" selection-start-column="126" selection-end-line="15" selection-end-column="126" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#92#106#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/motiondata/apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding>
-                <element signature="e#23#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/motiondata/migrations/0006_auto_20190901_1633.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -181,7 +166,6 @@
         <option value="$PROJECT_DIR$/XiaoBigdata/settings.py" />
         <option value="$PROJECT_DIR$/apps/analysis/models.py" />
         <option value="$PROJECT_DIR$/apps/strike2/models.py" />
-        <option value="$PROJECT_DIR$/apps/strike/adminx.py" />
         <option value="$PROJECT_DIR$/apps/strike2/adminx.py" />
         <option value="$PROJECT_DIR$/apps/association/adminx.py" />
         <option value="$PROJECT_DIR$/apps/analysis/adminx.py" />
@@ -194,10 +178,11 @@
         <option value="$PROJECT_DIR$/apps/baseinform/adminx.py" />
         <option value="$PROJECT_DIR$/apps/baseinform/models.py" />
         <option value="$PROJECT_DIR$/apps/motiondata/models.py" />
+        <option value="$PROJECT_DIR$/apps/strike/adminx.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="603" />
     <option name="y" value="103" />
     <option name="width" value="1404" />
@@ -211,6 +196,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,7 +263,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,11 +346,12 @@
       <workItem from="1567352027313" duration="60000" />
       <workItem from="1567428239389" duration="2907000" />
       <workItem from="1567515625745" duration="2221000" />
+      <workItem from="1567780896268" duration="1805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68740000" />
+    <option name="totallyTimeSpent" value="70545000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,10 +363,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29317698" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -451,13 +437,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/strike2/views.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/strike/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/baseinform/apps.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -562,16 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/strike/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-          <folding>
-            <element signature="e#92#106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/strike2/adminx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -652,16 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/strike/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/strike2/migrations/0002_auto_20190824_1834.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -684,7 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/motiondata/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="366">
           <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="11" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -747,6 +706,33 @@
           <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/strike/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/strike/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/strike/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="15" column="126" selection-start-line="15" selection-start-column="126" selection-end-line="15" selection-end-column="126" />
+          <folding>
+            <element signature="e#92#106#0" expanded="true" />
           </folding>
         </state>
       </provider>
