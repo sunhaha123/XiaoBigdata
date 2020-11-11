@@ -15,6 +15,7 @@ import os
 import  sys
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, BASE_DIR)
 sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 sys.path.insert(0,os.path.join(BASE_DIR,'extra_apps'))
 
@@ -27,7 +28,7 @@ SECRET_KEY = 'd-i$o30w!x-6(npuh431en$k)4-3ga@alu!++acy=cuippbl35'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'xadmin',
     'crispy_forms',
-
+    'rest_framework',
     'baseinform',
     'motiondata',
     'strike',
@@ -141,14 +142,21 @@ USE_TZ = False     #国际时间/本地时间
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
 # STATICFILES_DIRS = [(
 #     os.path.join(BASE_DIR, 'static')
 # )]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
 
 # 分页设置
 PAGINATION_SETTINGS = {

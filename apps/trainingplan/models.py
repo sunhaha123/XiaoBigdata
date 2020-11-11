@@ -12,7 +12,7 @@ class Arrange(models.Model):
     content = models.CharField(max_length=200, verbose_name=u"训练内容")
 
     class Meta:
-        verbose_name = u"训练计划安排"
+        verbose_name = u"--训练计划安排"
         verbose_name_plural = verbose_name
 
     def __str__(self):
@@ -26,14 +26,22 @@ class Hrate_info(models.Model):
     action = models.ForeignKey(Action, verbose_name=u"动作")
     testid = models.IntegerField(verbose_name=u"测试序号")
     testdate = models.DateTimeField(null=True,blank=True, verbose_name=u"训练日期")
-    hr_star = models.FloatField(verbose_name=u'训练开始心率')
+    hr_start = models.FloatField(verbose_name=u'训练开始心率')
     hr_end = models.FloatField(verbose_name=u'训练结束心率')
     hr_min = models.FloatField(verbose_name=u'心率最小值')
     hr_avg = models.FloatField(verbose_name=u'心率平均值')
     hr_max = models.FloatField(verbose_name=u'心率最大值')
+    # hr_d = models.FloatField(verbose_name=u'训练心率')
+
+    def hr_difference(self):
+        return self.hr_end-self.hr_start
+
+    hr_difference.short_description ='心率差值'
+    hr_difference.is_column = True
+    hr_difference.allow_tags = True
 
     class Meta:
-        verbose_name = u"训练强度"
+        verbose_name = u"--训练强度"
         verbose_name_plural = verbose_name
 
     def __int__(self):
@@ -53,7 +61,7 @@ class Physiology_test(models.Model):
 
 
     class Meta:
-        verbose_name = u'生化指标'
+        verbose_name = u'--生化指标'
         verbose_name_plural = verbose_name
 
     def __int__(self):
@@ -78,7 +86,7 @@ class Performance(models.Model):
     r7 = models.CharField(max_length=50,verbose_name=u'第7局比分')
 
     class Meta:
-        verbose_name = u'比赛成绩'
+        verbose_name = u'--比赛成绩'
         verbose_name_plural = verbose_name
 
     def __int__(self):

@@ -79,7 +79,7 @@ class Motion_data(models.Model):
 
 
     class Meta:
-        verbose_name = u"动作捕捉原始数据"
+        verbose_name = u"--动作捕捉原始数据"
         verbose_name_plural = verbose_name
 
     def __int__(self):
@@ -105,7 +105,7 @@ class Force_order(models.Model):
 
 
     class Meta:
-        verbose_name = u"关节点发力顺序数据"
+        verbose_name = u"--关节点发力顺序数据"
         verbose_name_plural = verbose_name
 
     def __int__(self):
@@ -130,7 +130,7 @@ class Curve_model(models.Model):
 
 
     class Meta:
-        verbose_name = u"击球动作曲线模型"
+        verbose_name = u"--击球动作曲线模型"
         verbose_name_plural = verbose_name
 
     def __int__(self):

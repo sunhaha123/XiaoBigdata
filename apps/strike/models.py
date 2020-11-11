@@ -27,7 +27,7 @@ class Force_info(models.Model):
     mark =  models.IntegerField(verbose_name=u'标识')
 
     class Meta:
-        verbose_name = u"击球力量原始数据"
+        verbose_name = u"--击球力量原始数据"
         verbose_name_plural = verbose_name
 
     def __int__(self):

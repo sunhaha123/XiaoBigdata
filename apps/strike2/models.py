@@ -14,7 +14,7 @@ class Striking_effect(models.Model):
     point = models.IntegerField(verbose_name=u'落点',choices=((0,"出界"),(1,"上台"),(2,"大区"),(3,"小区")))
 
     class Meta:
-        verbose_name = u"击球质量数据"
+        verbose_name = u"--击球质量数据"
         verbose_name_plural = verbose_name
 
     def __int__(self):

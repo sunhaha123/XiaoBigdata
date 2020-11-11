@@ -27,13 +27,14 @@ class Curve_fitAdmin(object):
     list_display = ['id', 'athlete','action','testid','testdate','joint','pos_x','pos_y','pos_z','rot_x','rot_y','rot_z']
     search_fields =  ['id', 'athlete__name','action__name','testid','testdate','joint','pos_x','pos_y','pos_z','rot_x','rot_y','rot_z']
     list_filter =  ['id', 'athlete','action','testid','testdate','joint','pos_x','pos_y','pos_z','rot_x','rot_y','rot_z']
-
+    model_icon = 'fa fa-tags'
 
 class AnalysisAdmin(object):
     list_display = ['id', 'athlete','action','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
     search_fields = ['id', 'athlete__name','action__name','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
     list_filter = ['id', 'athlete','action','testid','testdate','speedx','speedy','speedz','displacementx','displacementy','displacementz']
-
+    model_icon = 'fa fa-tags'
+    
 xadmin.site.register(Analysis,AnalysisAdmin)
 xadmin.site.register(Curve_fit,Curve_fitAdmin)
 
