@@ -13,7 +13,7 @@ class Coach(models.Model):
     team_name = models.CharField(max_length=50, verbose_name=u"所在运动队名称",null=True,blank=True)
 
     class Meta:
-        verbose_name = u"教练员"
+        verbose_name = u"--教练员"
         verbose_name_plural = verbose_name
 
     def __str__(self):
@@ -39,7 +39,7 @@ class Athlete(models.Model):
     retired = models.CharField(max_length=5, verbose_name=u"是否离队",choices=(("true","已经离队"),("false","未离队")),default="false")
 
     class Meta:
-        verbose_name = u"运动员"
+        verbose_name = u"--运动员"
         verbose_name_plural = verbose_name
 
     def __str__(self):
@@ -52,8 +52,9 @@ class Action(models.Model):
     memo = models.CharField(max_length=20, verbose_name=u"备忘录")
 
     class Meta:
-        verbose_name = u"击球动作"
+        verbose_name = u"--击球动作"
         verbose_name_plural = verbose_name
+        ordering = ['action_id']
 
     def __str__(self):
         return self.name
@@ -65,7 +66,7 @@ class Joint(models.Model):
     memo = models.CharField(max_length=20, verbose_name=u"备忘录")
 
     class Meta:
-        verbose_name = u"人体主要关节"
+        verbose_name = u"--人体主要关节"
         verbose_name_plural = verbose_name
 
     def __str__(self):

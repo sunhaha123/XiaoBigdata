@@ -20,7 +20,7 @@ class Striking_effectAdmin(object):
     list_display = ['id', 'athlete','action','testid','testdate','spin','speed','point']
     search_fields = ['id', 'athlete__name','action__name','testid','testdate','spin','speed','point']
     list_filter = ['id', 'athlete','action','testid','testdate','spin','speed','point']
-
+    model_icon = 'fa fa-align-left'
 #
 # class Curve_fitAdmin(object):
 #     list_display = ['id', 'athlete','action','testid','testdate','joint','pos_x','pos_y','pos_z','rot_x','rot_y','rot_z']

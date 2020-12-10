@@ -13,12 +13,14 @@ class ArrangeAdmin(object):
     list_display = ['id', 'athlete','timepoint','place','coach','content']
     search_fields = ['id', 'athlete__name','timepoint','place','coach','content']
     list_filter = ['id', 'athlete','timepoint','place','coach','content']
+    model_icon = 'fa fa-tint'
 
 class Hrate_infoAdmin(object):
 
-    list_display = ['id', 'athlete','action','testid','testdate','hr_star','hr_end','hr_min','hr_avg','hr_max']
-    search_fields = ['id', 'athlete__name','action__name','testid','testdate','hr_star','hr_end','hr_min','hr_avg','hr_max']
-    list_filter = ['id', 'athlete','action','testid','testdate','hr_star','hr_end','hr_min','hr_avg','hr_max']
+    list_display = ['id', 'athlete','action','testid','testdate','hr_start','hr_end','hr_min','hr_avg','hr_max','hr_difference']
+    search_fields = ['id', 'athlete__name','action__name','testid','testdate','hr_start','hr_end','hr_min','hr_avg','hr_max','hr_difference']
+    list_filter = ['id', 'athlete','action','testid','testdate','hr_start','hr_end','hr_min','hr_avg','hr_max']
+    model_icon = 'fa fa-tint'
 
 
 class  Physiology_testAdmin(object):
@@ -35,13 +37,14 @@ class  Physiology_testAdmin(object):
             "user_count4": {'title': u"生化指标-肌酸激酶", "x-field": "date", "y-field": ( 'jisuanjimei', ), "order": ('date',)},
             "user_count5": {'title': u"生化指标-TC", "x-field": "date", "y-field": ( 'tc'), "order": ('date',)},
 
+
     }
 
 class PerformanceAdmin(object):
     list_display = ['athlete','rival','date','mingcheng','xiangmu','result']
     search_fields = ['athlete__name','rival','date','mingcheng','xiangmu','result']
     list_filter =['athlete','rival','date','mingcheng','xiangmu','result']
-
+    model_icon = 'fa fa-tint'
 
 xadmin.site.register(Arrange,ArrangeAdmin)
 xadmin.site.register(Hrate_info,Hrate_infoAdmin)

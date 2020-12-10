@@ -17,7 +17,7 @@ class UserProfile(AbstractUser):
     # birthday = models.DateField(null=True, blank=True, verbose_name=u'生日', default='2010-01-01')
 
     class Meta:
-        verbose_name = u'用户信息'
+        verbose_name = u'--用户信息'
         verbose_name_plural = verbose_name
 
     def __unicode__(self):

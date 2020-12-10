@@ -4,32 +4,38 @@ Created on Wed Oct 11 15:12:47 2017
 
 @author: Administrator
 """
-import  xadmin
-from .models import Coach,Athlete,Action,Joint
+import xadmin
+from .models import Coach, Athlete, Action, Joint
+
 
 class AthleteAdmin(object):
-    list_display = [ 'athlete_id','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
-    search_fields = [  'athlete_id','name', 'sfzh','csrq','gender','height','weight','years','grade','coach__name']
-    list_filter = [  'athlete_id','name', 'sfzh','csrq','gender','height','weight','years','grade','coach']
+    list_display = ['athlete_id', 'name', 'sfzh', 'csrq', 'gender', 'height', 'weight', 'years', 'grade', 'coach']
+    search_fields = ['athlete_id', 'name', 'sfzh', 'csrq', 'gender', 'height', 'weight', 'years', 'grade',
+                     'coach__name']
+    list_filter = ['athlete_id', 'name', 'sfzh', 'csrq', 'gender', 'height', 'weight', 'years', 'grade', 'coach']
+    model_icon = 'fa fa-trophy'
 
 
 class CoachAdmin(object):
-    list_display = [ 'coach_id','name', 'gender', 'grade','years']
-    search_fields = [ 'coach_id','name', 'gender', 'grade','years']
-    list_filter = [ 'coach_id','name', 'gender', 'grade','years']
+    list_display = ['coach_id', 'name', 'gender', 'grade', 'years']
+    search_fields = ['coach_id', 'name', 'gender', 'grade', 'years']
+    list_filter = ['coach_id', 'name', 'gender', 'grade', 'years']
+    model_icon = 'fa fa-trophy'
 
 
 class ActionAdmin(object):
     list_display = ['action_id', 'name', 'memo', ]
-    search_fields = ['action_id', 'name', 'memo',]
-    list_filter = ['action_id', 'name', 'memo',]
-
+    search_fields = ['action_id', 'name', 'memo', ]
+    list_filter = ['action_id', 'name', 'memo', ]
+    model_icon = 'fa fa-trophy'
 
 
 class JointAdmin(object):
     list_display = ['joint_id', 'name', 'memo', ]
-    search_fields = ['joint_id', 'name', 'memo',]
-    list_filter = ['joint_id', 'name', 'memo',]
+    search_fields = ['joint_id', 'name', 'memo', ]
+    list_filter = ['joint_id', 'name', 'memo', ]
+    model_icon = 'fa fa-trophy'
+
 
 # class ArrangeAdmin(object):
 #     list_display = ['id', 'athlete','timepoint','place','coach','content']

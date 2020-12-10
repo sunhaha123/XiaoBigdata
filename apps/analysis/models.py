@@ -42,7 +42,7 @@ class Curve_fit(models.Model):
 
 
     class Meta:
-        verbose_name = u"动作曲线相似度分析"
+        verbose_name = u"--动作曲线相似度分析"
         verbose_name_plural = verbose_name
 
     def __int__(self):
@@ -67,7 +67,7 @@ class Analysis(models.Model):
     mark =  models.IntegerField(verbose_name=u'标识')
 
     class Meta:
-        verbose_name = u"击球力量数据分析"
+        verbose_name = u"--击球力量数据分析"
         verbose_name_plural = verbose_name
 
     def __int__(self):
