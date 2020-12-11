@@ -13,7 +13,7 @@ class Force_infoAdmin(object):
     list_filter = ['id', 'athlete','action','testid','testdate','ax','ay','az','anglex','angley','anglez']
     model_icon = 'fa fa-th-large'
     data_charts = {
-            "user_count": {'title': u"击球力量原始数据", "x-field": "id", "y-field": ("ax","ay","az","anglex","angley","anglez",), "order": ('testdate',)},
+            "user_count": {'title': u"击球力量原始数据", "x-field": "id", "y-field": ("ax","ay","az","anglex","angley","anglez",), "order": ('id',)},
             # "avg_count": {'title': u"Avg Report", "x-field": "date", "y-field": ('avg_count',), "order": ('date',)}
             # "user_count2": {'title': u"生化指标-皮质醇", "x-field": "date", "y-field": ('pizhichun'), "order": ('date',)},
             # "user_count3": {'title': u"生化指标-尿素氮", "x-field": "date", "y-field": ( 'niaosudan', ), "order": ('date',)},
